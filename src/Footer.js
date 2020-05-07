@@ -19,7 +19,7 @@ export class Footer extends Component {
             color: "white"
           }}
         >
-          © Fictional Company, Inc.
+          © Fictional Company, INC.
         </p>
         <p
           style={{
