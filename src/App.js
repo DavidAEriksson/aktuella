@@ -17,15 +17,11 @@ class App extends Component {
   };
 
   componentDidMount() {
-    axios
-      .get("http://192.168.1.5:3002/api/products/get", {
-        headers: { "Access-Control-Allow-Origin": "*" }
-      })
-      .then(res => {
-        const products = res.data;
-        console.log("product list: ", products);
-        this.setState({ products });
-      });
+    axios.get("http://192.168.1.5:3002/api/products/get").then(res => {
+      const products = res.data;
+      console.log("product list: ", products);
+      this.setState({ products });
+    });
   }
 
   render() {
